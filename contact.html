@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="icon" href="icon.jpg" type="icon">
+  <title>Hair Salon</title>
+
+  <link href="fonts/font-awesome.min.css" rel="stylesheet">
+  <link href="contact.css" rel="stylesheet">
+  <style>
+    form div label{
+      color: white;
+    }
+    h2{
+      color: orange;
+    }
+    .form-control{
+      background-color: transparent;
+      color: azure;
+    }
+    
+  </style>
+
+
+  
+<nav class="navbar navbar-expand-lg navbar-light bg  " style="background-color: rgb(218, 214, 214);">
+  <div class="container-fluid">
+    <div class="img" style="margin-left: 2%;"><img src="servicemain.jpg" alt="icon" style="width: 40px ;" height="40px">
+    </div>
+
+
+
+    <a class="navbar-brand" style="margin-left: 3%; width:30%; font-size: 30px; color: brown;" href="#"><b>Hair salon</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" style="margin-left: 20%; " id="navbarNav">
+      <center>
+        <ul class="navbar-nav ">
+          <li class="navitem">
+            <a class="navlink" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="navlink" href="about.html">About</a>
+          </li>
+          <li class="navitem" >
+            <a class="navlink" href="gallery.html">Gallery</a>
+          </li>
+          <li class="navitem">
+            <a class="navlinkactive" href="contact.html">Contact</a>
+          </li>
+          <li class="navitem">
+            <a class="navlink" href="service.html">Service</a>
+          </li> 
+        </ul>
+      </center>
+    </div>
+  </div>
+</nav>
+</head>
+
+<body >
+  
+
+  
+  <div style="  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('finalback1.jpg');
+  ">
+    <div class="container marketing-4" style="height: 85vh;">
+      <h2>
+        Contact Us</h2>
+      <form onsubmit="event.preventDefault();validate();" autocomplete="on">
+        <div class="mb-4">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" required class="form-control" id="Email " placeholder="Enter Your email" >
+          <label class="validation-error hide" id="fullNameValidationError"></label>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-4">
+          <label for="exampleInputPassword1" class="form-label">Contact No</label>
+          <input type="Text" required class="form-control" placeholder="Enter your contact no" id="contact">
+        </div>
+        <div class="mb-4">
+          <label for="exampleFormControlTextarea1" class="form-label">Elaborate Your Concerns</label>
+          <textarea required class="form-control" id="exampleFormControlTextarea1" placeholder="Elaborate Your Concerns" rows="3"></textarea>
+        </div>
+        <button type="submit"  class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  
+  </div>
+ 
+
+
+</body>
+<footer>
+  <div id="footer">
+    <center>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="social">
+              <a href="https://www.facebook.com/" targe="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a class="twitter" href="https://twitter.com/i/flow/login" targe="_blank"><i class="fa fa-twitter"
+                  aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/accounts/login/" targe="_blank"><i class="fa fa-instagram"
+                  aria-hidden="true"></i></a>
+
+            </div>
+            <div class="para">
+              <p class="quicklinks"><a href="index.html">Home&nbsp;|&nbsp; </a>
+
+                <a href="about.html"> About </a>
+                <a href="gallery.html">&nbsp;|&nbsp;Gallery &nbsp;|&nbsp;</a>
+                <a href="contact.html">Contact &nbsp;|&nbsp; </a>
+                <a href="service.html">Service</a>
+            </div>
+            </p>
+            <p>Copyright © 2022 Life, All Rights Reserved.</p>
+
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  </center>
+
+  </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script>
+ 
+
+
+
+  function validate() {
+    isValid = true;
+    if (document.getElementById("Email ").value == "") {
+        isValid = false;
+        document.getElementById("fullNameValidationError").classList.remove("hide");
+    } else {
+        isValid = true;
+        if (!document.getElementById("fullNameValidationError").classList.contains("hide"))
+            document.getElementById("fullNameValidationError").classList.add("hide");
+    }
+    
+    resetForm();
+    
+    
+    
+    
+}
+
+function resetForm() {
+  alert("Thank you for your response! Our team will be contact as soon as possible")
+    document.getElementById("Email ").value = "";
+    document.getElementById("contact").value = "";
+    document.getElementById("exampleFormControlTextarea1").value = "";
+   
+    selectedRow = null;
+}
+</script>
+
+</html>

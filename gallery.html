@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="icon" href="icon.jpg" type="icon">
+  <title>Hair Salon</title>
+
+  <link href="fonts/font-awesome.min.css" rel="stylesheet">
+  <link href="jquery.fancybox.min.css" rel="stylesheet" >
+  <link href="gallery.css" rel="stylesheet">
+  <style>
+    .hovereffect {
+  position: relative;
+
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6))
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  </style>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg  " style="background-color: rgb(218, 214, 214);">
+    <div class="container-fluid">
+      <div class="img" style="margin-left: 2%;"><img src="servicemain.jpg" alt="icon" style="width: 40px ;" height="40px">
+      </div>
+
+
+
+      <a class="navbar-brand" style="margin-left: 3%; width:30%; font-size: 30px; color: brown;" href="#"><b>Hair salon</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" style="margin-left: 20%; " id="navbarNav">
+        <center>
+          <ul class="navbar-nav ">
+            <li class="navitem">
+              <a class="navlink" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink" href="about.html">About</a>
+            </li>
+            <li class="navitem" >
+              <a class="navlinkactive" href="gallery.html">Gallery</a>
+            </li>
+            <li class="navitem">
+              <a class="navlink" href="contact.html">Contact</a>
+            </li>
+            <li class="navitem">
+              <a class="navlink" href="service.html">Service</a>
+            </li> 
+          </ul>
+        </center>
+      </div>
+    </div>
+  </nav>
+</head>
+
+<body style=" background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('finalback1.jpg')">
+ 
+
+
+  <div class="container">
+
+    <center><h2 style="color: orange;">Photos of Work</h2>
+      <img src="heading-element.png"></center>
+    <div class="row">
+      <div class="col-sm-4" >
+        <a class="fancybox" rel="group" href="gallery2.jpg">
+          <div class="hovereffect">
+              <picture>
+                  <source srcset="gallery2.jpg" type="image/webp">
+                  <source srcset="gallery2.jpg" type="image/jpg">
+                  <div class="gallery"> <img src="gallery2.jpg" class="img-responsive center-block" alt="image" style="width: 100%;  height: 345px; margin-top: 23px;"></div>
+                  <div class="overlay">
+                    <div class="text">Work</div>
+                  </div>
+              </picture>
+             
+          </div>
+      </a>
+    </div>
+      <div class="col-sm-8" >
+        <a class="fancybox" rel="group" href="gallery3.jpg">
+          <div class="hovereffect">
+              <picture>
+                  <source srcset="gallery3.jpg" type="image/webp" >
+                  <source srcset="gallery3.jpg" type="image/jpg" >
+                  <div class="gallery"><img src="gallery3.jpg" alt="image" style="width: 100%;  height: 345px; margin-top: 3%; "></div>
+                  <div class="overlay">
+                    <div class="text">Work</div>
+                  </div>
+              </picture>
+              
+          </div>
+        </a>
+      </div>
+  </div>
+  <div class="row">
+
+    <div class="col-sm-7">
+      <a class="fancybox"  rel="group" href="gallery4.jpg">
+        <div class="hovereffect">
+            <picture>
+                <source srcset="gallery4.jpg" type="image/webp" >
+                <source srcset="gallery4.jpg" type="image/jpg" >
+                <div class="gallery"><img src="gallery4.jpg" class="img-responsive center-block" alt="image" style="width: 100%; height: 345px; margin-top: 3%;"></div>
+                <div class="overlay">
+                  <div class="text">Work</div>
+                </div>
+            </picture>
+            
+        </div>
+        
+      </a>
+    </div>
+    <div class="col-sm-5">
+      <a class="fancybox" rel="group" href="gallery5.jpg">
+        <div class="hovereffect">
+            <picture>
+                <source srcset="gallery5.jpg" type="image/webp">
+                <source srcset="gallery5.jpg" type="image/jpg">
+                <div class="gallery"> <img src="gallery5.jpg" class="img-responsive center-block" alt="image" style="width: 100%;  height: 345px; margin-top: 3%;"></div>
+                <div class="overlay">
+                  <div class="text">Work</div>
+                </div>
+            </picture>
+           
+        </div>
+      </a>
+    </div>
+    
+  </div>
+  <div class="row">
+
+    <div class="col-sm-6">
+      <a class="fancybox" rel="group" href="gallery6.jpg">
+        <div class="hovereffect">
+            <picture>
+                <source srcset="gallery6.jpg" type="image/webp" >
+                <source srcset="gallery6.jpg" type="image/jpg" >
+                <div class="gallery"><img src="gallery6.jpg" alt="image" style="width: 100%;  height: 70%; margin-top: 3%;"></div>
+                <div class="overlay">
+                  <div class="text">Work</div>
+                </div>
+            </picture>
+            
+        </div>
+        </a>
+    </div>
+    <div class="col-sm-6">
+      <a class="fancybox"  rel="group" href="gallery7.jpg">
+        <div class="hovereffect">
+            <picture>
+                <source srcset="gallery7.jpg" type="image/webp" >
+                <source srcset="gallery7.jpg" type="image/jpg" >
+                <div class="gallery"><img src="gallery7.jpg" class="img-responsive center-block" alt="image" style="width: 100%; height: 70%; margin-top: 3%;"></div>
+                <div class="overlay">
+                  <div class="text">Work</div>
+                </div>
+            </picture>
+            
+        </div>
+        </a>
+    </div>
+    
+  </div>
+</div>
+
+</body>
+<footer>
+  <div id="footer">
+    <center>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="social">
+              <a href="https://www.facebook.com/" targe="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a class="twitter" href="https://twitter.com/i/flow/login" targe="_blank"><i class="fa fa-twitter"
+                  aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/accounts/login/" targe="_blank"><i class="fa fa-instagram"
+                  aria-hidden="true"></i></a>
+
+            </div>
+            <div class="para">
+              <p class="quicklinks"><a href="index.html">Home&nbsp;|&nbsp; </a>
+
+                <a href="about.html"> About </a>
+                <a href="gallery.html">&nbsp;|&nbsp;Gallery &nbsp;|&nbsp;</a>
+                <a href="contact.html">Contact &nbsp;|&nbsp; </a>
+                <a href="service.html">Service</a>
+            </div>
+            </p>
+            <p>Copyright © 2022 Life, All Rights Reserved.</p>
+
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  </center>
+
+  </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="jquery.fancybox.min.js"></script>
+  
+
+</html>
