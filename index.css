@@ -1,0 +1,34 @@
+/* ul li a {
+    margin-right: 65px;
+    
+  } */
+
+  .twitter {
+    margin-left: 15px;
+    margin-right: 15px;
+
+  }
+
+  footer {
+    background-color: rgb(223, 217, 217);
+    width: 100%;
+    
+
+  }
+  
+  center h2{
+    color: orange;
+  }
+  footer div a,
+  footer p {
+    color: gray;
+    text-decoration: none;
+  }
+
+
+  .appointment {
+
+    color: brown;
+    border: 3px solid brown;
+    width: 200px;
+  }
